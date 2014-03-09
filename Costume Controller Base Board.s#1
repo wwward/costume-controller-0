@@ -20807,9 +20807,9 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="R9" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="220k"/>
 <part name="GND33" library="SparkFun" deviceset="GND" device=""/>
 <part name="R10" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="2M"/>
-<part name="P+12" library="SparkFun" deviceset="VCC" device=""/>
 <part name="C23" library="CH_passive" deviceset="CAP" device="1206" value="10uF"/>
 <part name="L3" library="SparkFun" deviceset="INDUCTOR" device="." value="4.7uH, 1.2A"/>
+<part name="U$1" library="MyPOW" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20958,7 +20958,6 @@ Removed input pads, leaving JST input.</text>
 <attribute name="NAME" x="-1090.93" y="314.9346" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-1091.692" y="308.356" size="1.778" layer="96"/>
 </instance>
-<instance part="P+12" gate="1" x="-1084.58" y="322.58"/>
 <instance part="C23" gate="G$1" x="-1219.2" y="330.2" smashed="yes">
 <attribute name="NAME" x="-1216.66" y="332.74" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-1216.66" y="330.2" size="1.778" layer="96"/>
@@ -20967,6 +20966,7 @@ Removed input pads, leaving JST input.</text>
 <attribute name="NAME" x="-1173.48" y="345.44" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-1173.48" y="342.9" size="1.778" layer="96"/>
 </instance>
+<instance part="U$1" gate="G$1" x="-1084.58" y="325.12"/>
 </instances>
 <busses>
 </busses>
@@ -21016,6 +21016,19 @@ Removed input pads, leaving JST input.</text>
 <pinref part="U$31" gate="G$1" pin="+5V"/>
 <pinref part="RN1" gate="D" pin="2"/>
 <pinref part="D2" gate="G$1" pin="C"/>
+</segment>
+<segment>
+<wire x1="-1084.58" y1="317.5" x2="-1084.58" y2="320.04" width="0.1524" layer="91"/>
+<wire x1="-1084.58" y1="320.04" x2="-1092.2" y2="320.04" width="0.1524" layer="91"/>
+<wire x1="-1092.2" y1="320.04" x2="-1092.2" y2="317.5" width="0.1524" layer="91"/>
+<wire x1="-1092.2" y1="320.04" x2="-1145.54" y2="320.04" width="0.1524" layer="91"/>
+<wire x1="-1084.58" y1="320.04" x2="-1084.58" y2="322.58" width="0.1524" layer="91"/>
+<junction x="-1084.58" y="320.04"/>
+<pinref part="C19" gate="G$1" pin="1"/>
+<pinref part="U5" gate="G$1" pin="VOUT"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<junction x="-1092.2" y="320.04"/>
+<pinref part="U$1" gate="G$1" pin="+5V"/>
 </segment>
 </net>
 <net name="GND" class="2">
@@ -21684,7 +21697,7 @@ Removed input pads, leaving JST input.</text>
 <pinref part="U1" gate="G$1" pin="(XCK1/#CTS)PD5"/>
 </segment>
 </net>
-<net name="VCC" class="0">
+<net name="VCC" class="3">
 <segment>
 <wire x1="-1229.36" y1="248.92" x2="-1226.82" y2="248.92" width="0.1524" layer="91"/>
 <pinref part="JP6" gate="G$1" pin="10"/>
@@ -21715,19 +21728,6 @@ Removed input pads, leaving JST input.</text>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="P+11" gate="1" pin="VCC"/>
 <wire x1="-1104.9" y1="241.3" x2="-1104.9" y2="246.38" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="-1084.58" y1="317.5" x2="-1084.58" y2="320.04" width="0.1524" layer="91"/>
-<wire x1="-1084.58" y1="320.04" x2="-1092.2" y2="320.04" width="0.1524" layer="91"/>
-<wire x1="-1092.2" y1="320.04" x2="-1092.2" y2="317.5" width="0.1524" layer="91"/>
-<wire x1="-1092.2" y1="320.04" x2="-1145.54" y2="320.04" width="0.1524" layer="91"/>
-<wire x1="-1084.58" y1="320.04" x2="-1084.58" y2="322.58" width="0.1524" layer="91"/>
-<junction x="-1084.58" y="320.04"/>
-<pinref part="C19" gate="G$1" pin="1"/>
-<pinref part="U5" gate="G$1" pin="VOUT"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-<pinref part="P+12" gate="1" pin="VCC"/>
-<junction x="-1092.2" y="320.04"/>
 </segment>
 </net>
 <net name="N$1" class="0">

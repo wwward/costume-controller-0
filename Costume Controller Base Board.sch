@@ -13881,6 +13881,33 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <rectangle x1="-3.4" y1="4.95" x2="-3" y2="6.1001" layer="51"/>
 <rectangle x1="-4.1999" y1="4.95" x2="-3.8001" y2="6.1001" layer="51"/>
 </package>
+<package name="SOT23-DBV">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; DBV (R-PDSO-G5)&lt;p&gt;
+Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
+<wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="-0.81" x2="-1.422" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="51"/>
+<wire x1="-0.522" y1="0.81" x2="0.522" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-0.428" y1="-0.81" x2="-0.522" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="0.522" y1="-0.81" x2="0.428" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="-1.328" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="-0.81" x2="1.328" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.328" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="0.81" x2="-1.328" y2="0.81" width="0.1524" layer="21"/>
+<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.429" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -14013,6 +14040,19 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <pin name="VCC1" x="-25.4" y="22.86" length="middle" direction="pwr"/>
 <pin name="XTAL1" x="-25.4" y="5.08" length="middle"/>
 <pin name="XTAL2" x="-25.4" y="10.16" length="middle"/>
+</symbol>
+<symbol name="LP2985-XXDBVR">
+<wire x1="-7.62" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="8.89" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<pin name="IN" x="-10.16" y="5.08" length="short" direction="in"/>
+<pin name="ON/!OFF" x="-10.16" y="0" length="short" direction="in"/>
+<pin name="NC/FB" x="12.7" y="-5.08" length="short" direction="pas" rot="R180"/>
+<pin name="OUT" x="12.7" y="5.08" length="short" direction="pas" rot="R180"/>
+<pin name="GND" x="-10.16" y="-5.08" length="short" direction="pwr"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -15637,6 +15677,37 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LP2985-XXDBVR" prefix="IC">
+<description>&lt;b&gt;ULTRALOW-POWER 50-mA LOW-DROPOUT LINEAR REGULATORS&lt;/b&gt;&lt;p&gt;
+50-mA Low-Dropout Regulator&lt;br&gt;
+Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
+<gates>
+<gate name="G$1" symbol="LP2985-XXDBVR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-DBV">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="NC/FB" pad="4"/>
+<connect gate="G$1" pin="ON/!OFF" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="01"/>
+<technology name="12"/>
+<technology name="15"/>
+<technology name="18"/>
+<technology name="25"/>
+<technology name="27"/>
+<technology name="28"/>
+<technology name="30"/>
+<technology name="33"/>
+<technology name="50"/>
 </technologies>
 </device>
 </devices>
@@ -20810,6 +20881,13 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="C23" library="CH_passive" deviceset="CAP" device="1206" value="10uF"/>
 <part name="L3" library="SparkFun" deviceset="INDUCTOR" device="." value="4.7uH, 1.2A"/>
 <part name="U$1" library="MyPOW" deviceset="+5V" device=""/>
+<part name="C11" library="SmartPrj" deviceset="C-EU" device="C0603" value="1u"/>
+<part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="C14" library="SmartPrj" deviceset="C-EU" device="C0603" value="1u"/>
+<part name="P+10" library="supply1" deviceset="+5V" device=""/>
+<part name="GND21" library="supply1" deviceset="GND" device=""/>
+<part name="U3" library="SmartPrj" deviceset="LP2985-XXDBVR" device="" technology="33" value="LP2985-33DBVR"/>
+<part name="GND13" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20967,6 +21045,24 @@ Removed input pads, leaving JST input.</text>
 <attribute name="VALUE" x="-1173.48" y="342.9" size="1.778" layer="96"/>
 </instance>
 <instance part="U$1" gate="G$1" x="-1084.58" y="325.12"/>
+<instance part="C11" gate="G$1" x="-1094.74" y="152.4" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-1092.2" y="154.94" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="-1092.2" y="152.4" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="GND7" gate="1" x="-1094.74" y="144.78"/>
+<instance part="C14" gate="G$1" x="-1049.02" y="165.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="-1045.845" y="168.402" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-1045.591" y="165.227" size="1.778" layer="96"/>
+</instance>
+<instance part="P+10" gate="1" x="-1092.2" y="177.8" smashed="yes">
+<attribute name="VALUE" x="-1090.295" y="180.34" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND21" gate="1" x="-1049.02" y="157.48"/>
+<instance part="U3" gate="G$1" x="-1071.88" y="165.1" smashed="yes">
+<attribute name="NAME" x="-1079.5" y="173.99" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="-1079.5" y="154.94" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="GND13" gate="1" x="-1084.58" y="154.94"/>
 </instances>
 <busses>
 </busses>
@@ -21029,6 +21125,21 @@ Removed input pads, leaving JST input.</text>
 <pinref part="R10" gate="G$1" pin="2"/>
 <junction x="-1092.2" y="320.04"/>
 <pinref part="U$1" gate="G$1" pin="+5V"/>
+</segment>
+<segment>
+<wire x1="-1082.04" y1="165.1" x2="-1092.2" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="-1092.2" y1="165.1" x2="-1092.2" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="-1092.2" y1="170.18" x2="-1092.2" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="-1082.04" y1="170.18" x2="-1092.2" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="-1094.74" y1="162.56" x2="-1092.2" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="-1092.2" y1="162.56" x2="-1092.2" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="-1094.74" y1="157.48" x2="-1094.74" y2="162.56" width="0.1524" layer="91"/>
+<junction x="-1092.2" y="170.18"/>
+<junction x="-1092.2" y="165.1"/>
+<pinref part="P+10" gate="1" pin="+5V"/>
+<pinref part="U3" gate="G$1" pin="ON/!OFF"/>
+<pinref part="U3" gate="G$1" pin="IN"/>
+<pinref part="C11" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GND" class="2">
@@ -21228,6 +21339,22 @@ Removed input pads, leaving JST input.</text>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="-1125.22" y1="292.1" x2="-1125.22" y2="289.56" width="0.1524" layer="91"/>
 <junction x="-1125.22" y="289.56"/>
+</segment>
+<segment>
+<wire x1="-1094.74" y1="149.86" x2="-1094.74" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+</segment>
+<segment>
+<wire x1="-1049.02" y1="160.02" x2="-1049.02" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<pinref part="GND21" gate="1" pin="GND"/>
+</segment>
+<segment>
+<wire x1="-1082.04" y1="160.02" x2="-1084.58" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="-1084.58" y1="160.02" x2="-1084.58" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="GND"/>
+<pinref part="GND13" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="AREF" class="4">
@@ -21937,6 +22064,17 @@ Removed input pads, leaving JST input.</text>
 <pinref part="J1" gate="G$1" pin="SH4"/>
 <pinref part="J1" gate="G$1" pin="SH5"/>
 <pinref part="J1" gate="G$1" pin="SH6"/>
+</segment>
+</net>
+<net name="+3V3" class="0">
+<segment>
+<wire x1="-1049.02" y1="172.72" x2="-1049.02" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="-1056.64" y1="172.72" x2="-1049.02" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="-1059.18" y1="170.18" x2="-1056.64" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="-1056.64" y1="170.18" x2="-1056.64" y2="172.72" width="0.1524" layer="91"/>
+<label x="-1056.64" y="172.72" size="1.778" layer="95"/>
+<pinref part="C14" gate="G$1" pin="2"/>
+<pinref part="U3" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 </nets>
