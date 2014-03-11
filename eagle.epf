@@ -342,10 +342,11 @@ UsedLibrary="/Applications/EAGLE-6.5.0/lbr/xilinx-xc9.lbr"
 UsedLibrary="/Applications/EAGLE-6.5.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="/Applications/EAGLE-6.5.0/lbr/zetex.lbr"
 UsedLibrary="/Applications/EAGLE-6.5.0/lbr/zilog.lbr"
+UsedLibrary="/Users/wwward/Downloads/con-jst.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="4 935 603 1334"
+Loc="241 801 840 1200"
 State=2
 Number=0
 
