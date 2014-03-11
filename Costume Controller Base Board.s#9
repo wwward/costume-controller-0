@@ -20904,6 +20904,9 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <text x="-1201.42" y="315.214" size="1.778" layer="97">UVLO 2.6V</text>
 <text x="-1198.88" y="266.7" size="5.08" layer="91">Motion Sensor MPU-6050</text>
 <text x="-1193.8" y="363.22" size="5.08" layer="91">LiPo Boost Converter 5v Locked</text>
+<text x="-1061.72" y="340.36" size="1.778" layer="97">Removed 3.3v selector and circuit.
+Removed output pads.
+Removed input pads, leaving JST input.</text>
 </plain>
 <instances>
 <instance part="ICSP" gate="A" x="-881.38" y="347.98" smashed="yes">
@@ -22269,4 +22272,10 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
