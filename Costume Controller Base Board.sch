@@ -19661,99 +19661,6 @@ at 30/07/2012 17:45:58</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="con-jst">
-<description>&lt;b&gt;J.S.T. Connectors&lt;/b&gt;&lt;p&gt;
-J.S.T Mfg Co.,Ltd.&lt;p&gt;
-http://www.jst-mfg.com&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="9FLZ-SM">
-<description>&lt;b&gt;CONNECTOR&lt;/b&gt;</description>
-<wire x1="-3.5" y1="-0.5" x2="-4.25" y2="-2" width="0.3048" layer="21"/>
-<wire x1="-4.25" y1="-2" x2="-2.75" y2="-2" width="0.3048" layer="21"/>
-<wire x1="-2.75" y1="-2" x2="-3.5" y2="-0.5" width="0.3048" layer="21"/>
-<wire x1="-5.1" y1="2.6" x2="-2.45" y2="2.6" width="0.2032" layer="21"/>
-<wire x1="-2.45" y1="2.6" x2="2.45" y2="2.6" width="0.2032" layer="51"/>
-<wire x1="2.45" y1="2.6" x2="5.1" y2="2.6" width="0.2032" layer="21"/>
-<wire x1="5.1" y1="2.6" x2="5.1" y2="-2.5" width="0.2032" layer="21"/>
-<wire x1="5.1" y1="-2.5" x2="-5.1" y2="-2.5" width="0.2032" layer="21"/>
-<wire x1="-5.1" y1="-2.5" x2="-5.1" y2="2.6" width="0.2032" layer="21"/>
-<smd name="1" x="-2" y="2.5" dx="0.3" dy="1.5" layer="1"/>
-<smd name="2" x="-1.5" y="2.5" dx="0.3" dy="1.5" layer="1"/>
-<smd name="3" x="-1" y="2.5" dx="0.3" dy="1.5" layer="1"/>
-<smd name="4" x="-0.5" y="2.5" dx="0.3" dy="1.5" layer="1"/>
-<smd name="5" x="0" y="2.5" dx="0.3" dy="1.5" layer="1"/>
-<smd name="6" x="0.5" y="2.5" dx="0.3" dy="1.5" layer="1"/>
-<smd name="7" x="1" y="2.5" dx="0.3" dy="1.5" layer="1"/>
-<smd name="8" x="1.5" y="2.5" dx="0.3" dy="1.5" layer="1"/>
-<smd name="9" x="2" y="2.5" dx="0.3" dy="1.5" layer="1"/>
-<text x="-3.27" y="3.81" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2" y="-1.75" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="P-VN">
-<wire x1="0.254" y1="0" x2="-1.524" y2="0" width="0.2032" layer="94"/>
-<wire x1="-1.524" y1="0" x2="-1.524" y2="0.508" width="0.2032" layer="94"/>
-<wire x1="-1.524" y1="0.508" x2="-0.762" y2="0.762" width="0.2032" layer="94"/>
-<wire x1="-0.762" y1="0.762" x2="-0.508" y2="0.508" width="0.2032" layer="94"/>
-<wire x1="-0.508" y1="0.508" x2="0" y2="0.508" width="0.2032" layer="94"/>
-<wire x1="0" y1="0.508" x2="0.254" y2="0.762" width="0.2032" layer="94"/>
-<text x="1.016" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-<text x="-4.064" y="1.524" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-5.08" y="0" visible="off" length="middle" direction="pas"/>
-</symbol>
-<symbol name="P-N">
-<wire x1="0.254" y1="0" x2="-1.524" y2="0" width="0.2032" layer="94"/>
-<wire x1="-1.524" y1="0" x2="-1.524" y2="0.508" width="0.2032" layer="94"/>
-<wire x1="-1.524" y1="0.508" x2="-0.762" y2="0.762" width="0.2032" layer="94"/>
-<wire x1="-0.762" y1="0.762" x2="-0.508" y2="0.508" width="0.2032" layer="94"/>
-<wire x1="-0.508" y1="0.508" x2="0" y2="0.508" width="0.2032" layer="94"/>
-<wire x1="0" y1="0.508" x2="0.254" y2="0.762" width="0.2032" layer="94"/>
-<text x="1.016" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-<pin name="1" x="-5.08" y="0" visible="off" length="middle" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="09FLZ-SM1" prefix="X">
-<description>&lt;b&gt;CONNECTOR&lt;/b&gt;</description>
-<gates>
-<gate name="-1" symbol="P-VN" x="0" y="38.1" swaplevel="1"/>
-<gate name="-2" symbol="P-N" x="0" y="35.56" addlevel="always" swaplevel="1"/>
-<gate name="-3" symbol="P-N" x="0" y="33.02" addlevel="always" swaplevel="1"/>
-<gate name="-4" symbol="P-N" x="0" y="30.48" addlevel="always" swaplevel="1"/>
-<gate name="-5" symbol="P-N" x="0" y="27.94" addlevel="always" swaplevel="1"/>
-<gate name="-6" symbol="P-N" x="0" y="25.4" addlevel="always" swaplevel="1"/>
-<gate name="-7" symbol="P-N" x="0" y="22.86" addlevel="always" swaplevel="1"/>
-<gate name="-8" symbol="P-N" x="0" y="20.32" addlevel="always" swaplevel="1"/>
-<gate name="-9" symbol="P-N" x="0" y="17.78" addlevel="always" swaplevel="1"/>
-</gates>
-<devices>
-<device name="" package="9FLZ-SM">
-<connects>
-<connect gate="-1" pin="1" pad="1"/>
-<connect gate="-2" pin="1" pad="2"/>
-<connect gate="-3" pin="1" pad="3"/>
-<connect gate="-4" pin="1" pad="4"/>
-<connect gate="-5" pin="1" pad="5"/>
-<connect gate="-6" pin="1" pad="6"/>
-<connect gate="-7" pin="1" pad="7"/>
-<connect gate="-8" pin="1" pad="8"/>
-<connect gate="-9" pin="1" pad="9"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -19847,7 +19754,8 @@ http://www.jst-mfg.com&lt;p&gt;
 <part name="C2" library="SparkFun" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
-<part name="X1" library="con-jst" deviceset="09FLZ-SM1" device=""/>
+<part name="R11" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10k"/>
+<part name="R12" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -19865,7 +19773,6 @@ Removed input pads, leaving JST input.</text>
 <text x="-1013.46" y="256.54" size="1.778" layer="97">Level-shifter</text>
 <text x="-1013.46" y="261.62" size="1.778" layer="97">ENABLE tied high, could be IO</text>
 <text x="-1013.46" y="261.62" size="1.778" layer="97">ENABLE tied high, could be IO</text>
-<text x="-797.56" y="180.34" size="1.778" layer="97">JST Connector 9 pin</text>
 </plain>
 <instances>
 <instance part="ICSP" gate="A" x="-881.38" y="347.98" smashed="yes">
@@ -19987,15 +19894,8 @@ Removed input pads, leaving JST input.</text>
 <instance part="C2" gate="G$1" x="-1033.78" y="271.78"/>
 <instance part="GND9" gate="1" x="-1033.78" y="259.08"/>
 <instance part="GND10" gate="1" x="-1054.1" y="228.6"/>
-<instance part="X1" gate="-1" x="-769.62" y="170.18"/>
-<instance part="X1" gate="-2" x="-769.62" y="167.64"/>
-<instance part="X1" gate="-3" x="-769.62" y="165.1"/>
-<instance part="X1" gate="-4" x="-769.62" y="162.56"/>
-<instance part="X1" gate="-5" x="-769.62" y="160.02"/>
-<instance part="X1" gate="-6" x="-769.62" y="157.48"/>
-<instance part="X1" gate="-7" x="-769.62" y="154.94"/>
-<instance part="X1" gate="-8" x="-769.62" y="152.4"/>
-<instance part="X1" gate="-9" x="-769.62" y="149.86"/>
+<instance part="R11" gate="G$1" x="-952.5" y="248.92" rot="R90"/>
+<instance part="R12" gate="G$1" x="-942.34" y="248.92" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -20542,9 +20442,13 @@ Removed input pads, leaving JST input.</text>
 <label x="-759.46" y="251.46" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="(OC0B/SCL/INT0)PD0"/>
 <wire x1="-741.68" y1="251.46" x2="-741.68" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="-741.68" y1="213.36" x2="-980.44" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="-741.68" y1="213.36" x2="-952.5" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="-952.5" y1="213.36" x2="-980.44" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="-980.44" y1="213.36" x2="-980.44" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="-980.44" y1="238.76" x2="-1005.84" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="-952.5" y1="243.84" x2="-952.5" y2="213.36" width="0.1524" layer="91"/>
+<junction x="-952.5" y="213.36"/>
 </segment>
 </net>
 <net name="SDA2" class="0">
@@ -20553,9 +20457,13 @@ Removed input pads, leaving JST input.</text>
 <label x="-759.46" y="254" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="(SDA/INT1)PD1"/>
 <wire x1="-734.06" y1="254" x2="-734.06" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="-734.06" y1="210.82" x2="-982.98" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="-734.06" y1="210.82" x2="-942.34" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="-942.34" y1="210.82" x2="-982.98" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="-982.98" y1="210.82" x2="-982.98" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="-982.98" y1="236.22" x2="-1005.84" y2="236.22" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="-942.34" y1="243.84" x2="-942.34" y2="210.82" width="0.1524" layer="91"/>
+<junction x="-942.34" y="210.82"/>
 </segment>
 </net>
 <net name="INT" class="0">
@@ -20667,9 +20575,17 @@ Removed input pads, leaving JST input.</text>
 </net>
 <net name="SCL1" class="0">
 <segment>
-<wire x1="-1127.76" y1="220.98" x2="-993.14" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="-1127.76" y1="220.98" x2="-1104.9" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="-1104.9" y1="220.98" x2="-1097.28" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="-1097.28" y1="220.98" x2="-993.14" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="-993.14" y1="220.98" x2="-993.14" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="-993.14" y1="246.38" x2="-1005.84" y2="246.38" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="-1097.28" y1="231.14" x2="-1097.28" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="-1104.9" y1="231.14" x2="-1104.9" y2="220.98" width="0.1524" layer="91"/>
+<junction x="-1104.9" y="220.98"/>
+<junction x="-1097.28" y="220.98"/>
 </segment>
 </net>
 <net name="SDA1" class="0">
@@ -20693,6 +20609,12 @@ Removed input pads, leaving JST input.</text>
 <wire x1="-1054.1" y1="238.76" x2="-1036.32" y2="238.76" width="0.1524" layer="91"/>
 <junction x="-1054.1" y="243.84"/>
 <junction x="-1033.78" y="281.94"/>
+<wire x1="-1033.78" y1="281.94" x2="-952.5" y2="281.94" width="0.1524" layer="91"/>
+<wire x1="-952.5" y1="281.94" x2="-942.34" y2="281.94" width="0.1524" layer="91"/>
+<wire x1="-952.5" y1="281.94" x2="-952.5" y2="254" width="0.1524" layer="91"/>
+<wire x1="-942.34" y1="281.94" x2="-942.34" y2="254" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R12" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="STRAND1" class="0">
@@ -20701,21 +20623,12 @@ Removed input pads, leaving JST input.</text>
 <wire x1="-769.62" y1="256.54" x2="-741.68" y2="256.54" width="0.1524" layer="91"/>
 <label x="-741.68" y="256.54" size="1.27" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="X1" gate="-1" pin="1"/>
-<wire x1="-774.7" y1="170.18" x2="-792.48" y2="170.18" width="0.1524" layer="91"/>
-<label x="-792.48" y="170.18" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
 </net>
 <net name="STRAND2" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(TXD1/INT3)PD3"/>
 <wire x1="-769.62" y1="259.08" x2="-741.68" y2="259.08" width="0.1524" layer="91"/>
 <label x="-741.68" y="259.08" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="-772.16" y1="167.64" x2="-792.48" y2="167.64" width="0.1524" layer="91"/>
-<label x="-792.48" y="167.64" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="STRAND3" class="0">
@@ -20724,21 +20637,12 @@ Removed input pads, leaving JST input.</text>
 <wire x1="-769.62" y1="261.62" x2="-741.68" y2="261.62" width="0.1524" layer="91"/>
 <label x="-741.68" y="261.62" size="1.27" layer="95" xref="yes"/>
 </segment>
-<segment>
-<wire x1="-772.16" y1="165.1" x2="-792.48" y2="165.1" width="0.1524" layer="91"/>
-<label x="-792.48" y="165.1" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
 </net>
 <net name="STRAND4" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(XCK1/#CTS)PD5"/>
 <wire x1="-769.62" y1="264.16" x2="-741.68" y2="264.16" width="0.1524" layer="91"/>
 <label x="-741.68" y="264.16" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="X1" gate="-4" pin="1"/>
-<wire x1="-774.7" y1="162.56" x2="-792.48" y2="162.56" width="0.1524" layer="91"/>
-<label x="-792.48" y="162.56" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="STRAND5" class="0">
@@ -20747,22 +20651,12 @@ Removed input pads, leaving JST input.</text>
 <wire x1="-769.62" y1="266.7" x2="-741.68" y2="266.7" width="0.1524" layer="91"/>
 <label x="-741.68" y="266.7" size="1.27" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="X1" gate="-5" pin="1"/>
-<wire x1="-774.7" y1="160.02" x2="-792.48" y2="160.02" width="0.1524" layer="91"/>
-<label x="-792.48" y="160.02" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
 </net>
 <net name="STRAND6" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(T0/OC4D/ADC10)PD7"/>
 <wire x1="-769.62" y1="269.24" x2="-741.68" y2="269.24" width="0.1524" layer="91"/>
 <label x="-741.68" y="269.24" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="X1" gate="-6" pin="1"/>
-<wire x1="-774.7" y1="157.48" x2="-792.48" y2="157.48" width="0.1524" layer="91"/>
-<label x="-792.48" y="157.48" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="STRAND7" class="0">
@@ -20771,11 +20665,6 @@ Removed input pads, leaving JST input.</text>
 <wire x1="-769.62" y1="274.32" x2="-741.68" y2="274.32" width="0.1524" layer="91"/>
 <label x="-741.68" y="274.32" size="1.27" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="X1" gate="-7" pin="1"/>
-<wire x1="-774.7" y1="154.94" x2="-792.48" y2="154.94" width="0.1524" layer="91"/>
-<label x="-792.48" y="154.94" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
 </net>
 <net name="STRAND8" class="0">
 <segment>
@@ -20783,21 +20672,12 @@ Removed input pads, leaving JST input.</text>
 <wire x1="-769.62" y1="281.94" x2="-741.68" y2="281.94" width="0.1524" layer="91"/>
 <label x="-741.68" y="281.94" size="1.27" layer="95" xref="yes"/>
 </segment>
-<segment>
-<wire x1="-772.16" y1="152.4" x2="-792.48" y2="152.4" width="0.1524" layer="91"/>
-<label x="-792.48" y="152.4" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
 </net>
 <net name="STRAND9" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(ICP3/CLK0/OC4A)PC7"/>
 <wire x1="-769.62" y1="284.48" x2="-741.68" y2="284.48" width="0.1524" layer="91"/>
 <label x="-741.68" y="284.48" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="X1" gate="-9" pin="1"/>
-<wire x1="-774.7" y1="149.86" x2="-792.48" y2="149.86" width="0.1524" layer="91"/>
-<label x="-792.48" y="149.86" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="N$15" class="0">
